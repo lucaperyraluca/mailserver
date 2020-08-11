@@ -5,11 +5,10 @@
     packages: 
       - postfix
       - dovecot
-      - squirrelmail
       - httpd
   tasks: 
-- name:   Instalar paquetes "{{ packages }}"
-  yum:  
-    name: "{{ packages }}"
+  - name:   Instalar paquetes "{{ packages }}"
+    yum:  
+      name: "{{ packages }}"
   
 
